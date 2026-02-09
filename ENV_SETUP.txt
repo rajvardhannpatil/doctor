@@ -1,0 +1,24 @@
+INSTRUCTIONS: Create a file named ".env" in your project root directory with the following content:
+
+===========================================
+# Razorpay Configuration
+# Get your Payment Link from Razorpay Dashboard
+
+# Replace YOUR_LINK_ID with your actual Payment Link ID from Razorpay
+# For now, leave demo mode enabled to see how it works
+VITE_DEMO_MODE=true
+
+# After creating your Razorpay account and Payment Link, uncomment this line and add your link:
+# VITE_RAZORPAY_PAYMENT_LINK=https://pages.razorpay.com/pl_YOUR_LINK_ID/view
+===========================================
+
+QUICK STEPS TO GET RAZORPAY PAYMENT LINK:
+1. Go to: https://razorpay.com (Sign up - FREE, takes 2 minutes)
+2. Login to Dashboard
+3. Go to: Payment Links > Create Payment Link
+4. Set Amount: ₹199
+5. Copy the Payment Link URL
+6. Add it to .env file as: VITE_RAZORPAY_PAYMENT_LINK=your_link_here
+7. Set VITE_DEMO_MODE=false
+8. Restart server (npm run dev)
+

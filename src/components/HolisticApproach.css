@@ -1,0 +1,152 @@
+.holistic-approach {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+.holistic-approach .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.holistic-approach .section-headline {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #0066CC;
+  margin-bottom: 3rem;
+  line-height: 1.4;
+  font-weight: 500;
+  animation: fadeInUp 0.8s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 102, 204, 0.1);
+}
+
+.approach-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.approach-points {
+  list-style: none;
+  padding: 0;
+}
+
+.approach-points li {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f0f8ff, #ffffff);
+  border-radius: 12px;
+  border-left: 5px solid #00CED1;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.approach-points li:nth-child(1) { animation-delay: 0.1s; }
+.approach-points li:nth-child(2) { animation-delay: 0.2s; }
+.approach-points li:nth-child(3) { animation-delay: 0.3s; }
+.approach-points li:nth-child(4) { animation-delay: 0.4s; }
+
+.approach-points li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 6px 20px rgba(0, 206, 209, 0.2);
+  border-left-width: 6px;
+  background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
+}
+
+.approach-points li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #0066CC;
+  font-size: 1rem;
+}
+
+.approach-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pyramid-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
+  transition: all 0.4s ease;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.pyramid-image:hover {
+  transform: scale(1.05) rotate(2deg);
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 968px) {
+  .holistic-approach {
+    padding: 3rem 0;
+  }
+  
+  .holistic-approach .container {
+    padding: 0 1.5rem;
+  }
+  
+  .holistic-approach .section-headline {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .approach-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .pyramid-image {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .holistic-approach {
+    padding: 2.5rem 0;
+  }
+  
+  .holistic-approach .section-headline {
+    font-size: 1.4rem;
+  }
+  
+  .approach-points li {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .approach-points li strong {
+    font-size: 0.95rem;
+  }
+  
+  .pyramid-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .holistic-approach .section-headline {
+    font-size: 1.2rem;
+  }
+  
+  .approach-points li {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .pyramid-image {
+    max-width: 250px;
+  }
+}
+

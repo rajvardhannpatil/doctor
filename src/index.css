@@ -1,0 +1,62 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color scheme - Light Blue, Yellow, White, Green */
+  --light-blue: #87CEEB;
+  --light-blue-dark: #6BB6D6;
+  --cyan: #00CED1;
+  --teal: #20B2AA;
+  --mint-green: #98FB98;
+  --bright-yellow: #FFD700;
+  --yellow-hover: #FFED4E;
+  --white: #ffffff;
+  --text-dark: #333333;
+  --text-black: #000000;
+  --text-light: #666666;
+  --text-white: #ffffff;
+  --text-light-gray: #e0e0e0;
+  --gradient-green-yellow: linear-gradient(90deg, #98FB98, #FFD700);
+
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
