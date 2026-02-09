@@ -154,35 +154,15 @@
   margin-bottom: 0.8rem;
 }
 
-.disclaimer-checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  cursor: pointer;
+.disclaimer-point {
   font-size: 0.95rem;
   color: #333;
   font-weight: 500;
   padding: 0.8rem;
   background: rgba(255, 215, 0, 0.1);
   border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.disclaimer-checkbox:hover {
-  background: rgba(255, 215, 0, 0.2);
-}
-
-.disclaimer-checkbox input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-
-.disclaimer-checkbox span {
-  flex: 1;
   line-height: 1.4;
+  margin: 0;
 }
 
 .thank-you {
@@ -263,7 +243,7 @@
     font-size: 0.85rem;
   }
 
-  .disclaimer-checkbox {
+  .disclaimer-point {
     font-size: 0.85rem;
   }
 }

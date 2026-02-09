@@ -1,5 +1,5 @@
 import './WorkshopIntro.css';
-import drImage from '../assets/drimage.jpeg';
+import drImage from '../assets/newprofile.jpeg';
 import { handlePayment } from '../utils/razorpayPayment';
 
 const WorkshopIntro = () => {
