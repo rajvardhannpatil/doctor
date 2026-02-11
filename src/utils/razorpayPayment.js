@@ -18,48 +18,24 @@ export const openRazorpayPaymentLink = () => {
   // Check if payment link is configured in environment variables
   const paymentLink = import.meta.env.VITE_RAZORPAY_PAYMENT_LINK;
   
-  // Demo/Test mode - Remove this after setting up real Razorpay account
-  const DEMO_MODE = import.meta.env.VITE_DEMO_MODE === 'true' || !paymentLink;
+  // Debug: Log the payment link to console
+  console.log('Payment Link from env:', paymentLink);
+  console.log('All env vars:', import.meta.env);
   
-  if (DEMO_MODE) {
-    // Show demo message with instructions
-    const userWantsDemo = confirm(
-      'Payment link not configured yet.\n\n' +
-      'Would you like to:\n' +
-      '1. See demo instructions (OK)\n' +
-      '2. Test with sample Razorpay link (Cancel)\n\n' +
-      'To set up real payment:\n' +
-      '1. Create free account at razorpay.com\n' +
-      '2. Create Payment Link (takes 2 minutes)\n' +
-      '3. Add link to .env file'
+  // Check if payment link exists
+  if (!paymentLink || paymentLink.trim() === '') {
+    alert(
+      'Payment link not configured.\n\n' +
+      'Please add your Razorpay payment link to the .env file:\n' +
+      'VITE_RAZORPAY_PAYMENT_LINK=your_payment_link_here\n\n' +
+      'After adding, restart your development server.'
     );
-    
-    if (userWantsDemo) {
-      // Open demo/test Razorpay page
-      // You can replace this with an actual test payment link once you create your Razorpay account
-      const demoLink = 'https://razorpay.com/payment-button/pl_test_YOUR_LINK_ID/view';
-      alert(
-        'DEMO MODE\n\n' +
-        'To get your real payment link:\n\n' +
-        '1. Go to: https://razorpay.com\n' +
-        '2. Sign up (free, takes 2 minutes)\n' +
-        '3. Go to Dashboard > Payment Links\n' +
-        '4. Click "Create Payment Link"\n' +
-        '5. Set amount to ₹199\n' +
-        '6. Copy the Payment Link URL\n' +
-        '7. Create .env file in project root\n' +
-        '8. Add: VITE_RAZORPAY_PAYMENT_LINK=your_link_here\n\n' +
-        'For now, click OK to see Razorpay test page format.'
-      );
-      // This will open Razorpay's general payment page format for reference
-      window.open('https://razorpay.com/payment-links/', '_blank');
-    } else {
-      console.log('User cancelled. Please configure VITE_RAZORPAY_PAYMENT_LINK in .env file');
-    }
+    console.error('VITE_RAZORPAY_PAYMENT_LINK is not set in environment variables');
     return;
   }
   
   // Open Razorpay payment link in new window/tab
+  console.log('Opening payment link:', paymentLink);
   window.open(paymentLink, '_blank');
 };
 
