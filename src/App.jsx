@@ -9,11 +9,13 @@ import Bonuses from './components/Bonuses';
 import FAQ from './components/FAQ';
 import MeetMentor from './components/MeetMentor';
 import FinalCTA from './components/FinalCTA';
+import WhatsAppModal from './components/WhatsAppModal';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <WhatsAppModal />
       <Header />
       <MainBanner />
       <WorkshopIntro />

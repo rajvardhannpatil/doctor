@@ -36,7 +36,31 @@ export const openRazorpayPaymentLink = () => {
   
   // Open Razorpay payment link in new window/tab
   console.log('Opening payment link:', paymentLink);
-  window.open(paymentLink, '_blank');
+  
+  // Set a flag to check for payment success when user returns
+  localStorage.setItem('payment_pending', 'true');
+  
+  // Open payment link
+  const paymentWindow = window.open(paymentLink, '_blank');
+  
+  // Listen for when the payment window closes (user returns)
+  // Note: This is a fallback. Razorpay payment links typically redirect back to a success page
+  // You should configure the success redirect URL in Razorpay dashboard to point back to your site
+  // with a parameter like: ?payment_status=success
+  
+  // Check periodically if window is closed (user might have completed payment)
+  const checkWindow = setInterval(() => {
+    if (paymentWindow && paymentWindow.closed) {
+      clearInterval(checkWindow);
+      // Check if payment was successful (this will be set by the redirect URL)
+      // For now, we'll rely on URL parameters when user returns to the site
+    }
+  }, 1000);
+  
+  // Clear interval after 5 minutes
+  setTimeout(() => {
+    clearInterval(checkWindow);
+  }, 300000);
 };
 
 // Option 2: Using Razorpay Checkout (Requires backend for order creation)
@@ -102,6 +126,13 @@ export const openRazorpayCheckout = async (orderData) => {
       razorpay.open();
     };
   });
+};
+
+// Function to mark payment as successful (can be called from webhook or redirect)
+export const markPaymentSuccess = () => {
+  localStorage.setItem('payment_success', 'true');
+  // Reload the page to show the modal
+  window.location.reload();
 };
 
 // Main function to handle payment (uses Payment Link by default)
