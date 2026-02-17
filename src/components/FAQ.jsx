@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "If any problem regarding payment for workshop whom can I ask or talk to about it?",
-      answer: "Contact or text on this number - 000000000"
+      answer: "Contact or text on this number - 9307631817"
     }
   ];
 

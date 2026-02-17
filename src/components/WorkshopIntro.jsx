@@ -20,7 +20,7 @@ const WorkshopIntro = () => {
           
           <div className="workshop-details">
             <div className="workshop-box">
-              <h3 className="workshop-title">Dr. Akash Dongale</h3>
+              <h3 className="workshop-title">Dr. Akash Dongale (BNYS)</h3>
               <p className="workshop-instructor">
               Naturopathy practitioner, Gut-mind-body Reset & Detox expert, holistic health consultant  
               </p>
