@@ -146,8 +146,29 @@
   color: #000;
 }
 
-.workshop-schedule p {
+.schedule-item {
+  display: flex;
+  align-items: flex-start;
   margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.schedule-label {
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+.schedule-value {
+  flex: 1;
+}
+
+.schedule-item-batches .schedule-value {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-item-batches .schedule-value > div {
+  margin: 0;
 }
 
 .workshop-approach {

@@ -7,16 +7,16 @@ const Bonuses = () => {
   };
   const bonuses = [
     {
-      title: "Gut & Mind Strengthen 10 Minute Morning Routine Guide - PDF",
-      worth: "Free Bonus"
+      title: "Gut-Mind health मजबूत करण्यासाठीचे Daily morning routine Guide-PDF ",
+      worth: "Worth 500/- now free"
     },
     {
-      title: "Powerful Activities for Gut - Mind & Body Guide - PDF",
-      worth: "Free Bonus"
+      title: "Powerful Activities for Gut-Mind-Body health Guide-PDF",
+      worth: "Worth 1000/- now free "
     },
     {
-      title: "Dr. Akash Holistic 15 Gut-Mind Body Health Community Access",
-      worth: "Free Bonus"
+      title: "Night healing routine पचन सुधारणा व मन शांती करण्यासाठी Guide-PDF",
+      worth: "Worth 500/- now free"
     }
   ];
 
@@ -29,7 +29,7 @@ const Bonuses = () => {
           <p className="pricing-highlight">आता फक्त ₹199 मध्ये प्रवेश मिळवा आणि + 3 bonus free</p>
         </div>
         <h2 className="section-headline">
-          Grab these Amazing BONUSES when you Register Now!!
+        या वर्कशॉप मध्ये आत्ता लगेच सहभागी व्हा आणि मिळवा 2000/- किमतीचे खालील Bonuses पूर्णपणे फ्री (मोफत)
         </h2>
         <div className="bonuses-grid">
           {bonuses.map((bonus, index) => (
@@ -41,10 +41,13 @@ const Bonuses = () => {
           ))}
         </div>
         <p className="bonus-note">
-          खालील बटनावरती क्लिक करा आणि ₹199 पे करून लगेच तुमची जागा निश्चित करा
+        वरील 2000/- किमतीचे bonuse Guides फ्री मध्ये मिळवण्यासाठी join now वरती क्लिक करा 199 पे करून या ग्रेट वोर्कशॉप मध्ये सहभागी व्हा.
+        </p>
+        <p className="bonus-note">
+        ( ही ऑफर लिमिटेड आहे फायदा घ्या आणि जॉईन करा )
         </p>
         <div className="cta-center">
-          <button className="register-btn large" onClick={handleRegisterClick}>Reserve my seat @ ₹199</button>
+          <button className="register-btn large" onClick={handleRegisterClick}>Join now-only 199 Rs</button>
         </div>
         <p className="whatsapp-note">
           पेमेंट झाल्यानंतर आमच्या व्हाट्सअप ग्रुपला जॉईन करा

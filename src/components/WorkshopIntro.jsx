@@ -28,9 +28,21 @@ const WorkshopIntro = () => {
               <div className="workshop-info">
                 <p className="workshop-format">3 days live masterclass (on zoom)</p>
                 <div className="workshop-schedule">
-                  <p><strong>Starting date:</strong> --</p>
-                  <p><strong>Timing:</strong> --</p>
-                  <p><strong>Batches:</strong> Morning / Night</p>
+                  <div className="schedule-item">
+                    <span className="schedule-label"><strong>Starting date:</strong></span>
+                    <span className="schedule-value">14 March to 16 march 2026</span>
+                  </div>
+                  <div className="schedule-item">
+                    <span className="schedule-label"><strong>Timing:</strong></span>
+                    <span className="schedule-value">1 hr 30 minutes</span>
+                  </div>
+                  <div className="schedule-item schedule-item-batches">
+                    <span className="schedule-label"><strong>Batches:</strong></span>
+                    <div className="schedule-value">
+                      <div>Morning - 7:00 am to 8:30 am</div>
+                      <div>Night - 9:30 pm to 11:00 pm</div>
+                    </div>
+                  </div>
                 </div>
               </div>
               
