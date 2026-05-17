@@ -18,7 +18,7 @@ const FAQ = () => {
       answer: "No refunds are not available."
     },
     {
-      question: "If any problem regarding payment for workshop whom can I ask or talk to about it?",
+      question: "If any problem regarding payment or workshop whom can I ask or talk to about it?",
       answer: "Contact or text on this number - 9307631817"
     }
   ];

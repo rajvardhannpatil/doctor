@@ -17,7 +17,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <span className="logo-icon">🌿</span>
-          <span className="logo-text">Healholis Wellness</span>
+          <span className="logo-text">Healholis <span className="logo-wellness">Wellness</span></span>
         </div>
         <nav className="nav">
           <a href="#home">Home</a>

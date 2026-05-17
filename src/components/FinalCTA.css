@@ -271,3 +271,49 @@
   }
 }
 
+.cta-message-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-message-box p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.cta-message-box p:last-child {
+  margin: 0;
+  color: #fbdd5e;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-shadow: 0 0 10px rgba(251, 221, 94, 0.2);
+}
+
+@media (max-width: 768px) {
+  .cta-message-box {
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem auto;
+  }
+  
+  .cta-message-box p {
+    font-size: 1.1rem;
+  }
+  
+  .cta-message-box p:last-child {
+    font-size: 1.15rem;
+  }
+}
+

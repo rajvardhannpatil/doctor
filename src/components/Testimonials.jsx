@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import './Testimonials.css';
 import { handlePayment } from '../utils/razorpayPayment';
-import testimonial1 from '../assets/WhatsApp Image 2026-01-08 at 9.29.26 PM.jpeg';
-import testimonial2 from '../assets/WhatsApp Image 2026-01-08 at 9.30.00 PM.jpeg';
-import testimonial3 from '../assets/WhatsApp Image 2026-01-08 at 9.30.25 PM.jpeg';
-import testimonial4 from '../assets/WhatsApp Image 2026-01-08 at 9.30.46 PM.jpeg';
-import testimonial5 from '../assets/WhatsApp Image 2026-01-08 at 9.31.01 PM.jpeg';
-import testimonial6 from '../assets/WhatsApp Image 2026-01-08 at 9.33.45 PM.jpeg';
+import testimonial1 from '../assets/r1.jpeg';
+import testimonial2 from '../assets/r2.jpeg';
+import testimonial3 from '../assets/r3.jpeg';
+import testimonial4 from '../assets/r4.jpeg';
+import testimonial5 from '../assets/r5.jpeg';
+import testimonial6 from '../assets/r6.jpeg';
 
 const Testimonials = () => {
   const testimonials = [

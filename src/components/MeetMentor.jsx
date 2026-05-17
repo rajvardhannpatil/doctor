@@ -10,9 +10,9 @@ const MeetMentor = () => {
         <div className="mentor-content">
           <div className="mentor-text">
             <p>
-              I am Dr. Akash Dongale, a Naturopathy & holistic health wellness professional. 
-              Gut-mind-body detox & reset expert. Over the last 5 years, I've helped 500+ people 
-              heal naturally from Digestion Gut issues, skin problems, mental emotional imbalance.
+              I am Dr. Akash Dongale, a Naturopathy & holistic health consultant, integrated wellness coach.
+              Gut-mind-body detox & reset expert. Over the last 5 years, I've helped 500+ people
+              heal naturally from Digestion Gut issues, skin problems, mental emotional imbalance & Various health and fitness related issues
             </p>
             <p>
               My approach combines ancient wisdom with modern understanding of the gut-brain connection. 

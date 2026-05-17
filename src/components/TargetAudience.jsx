@@ -1,13 +1,13 @@
 import './TargetAudience.css';
-import image1 from '../assets/image1.png';
+import image1 from '../assets/image1.jpeg';
 import image2 from '../assets/image2.png';
 import image3 from '../assets/image3.png';
-import image4 from '../assets/image4.png';
-import image5 from '../assets/image5.png';
-import image6 from '../assets/image6.png';
+import image4 from '../assets/image4.jpeg';
+import image5 from '../assets/image5.jpeg';
+import image6 from '../assets/image6.jpeg';
 
 const TargetAudience = () => {
-  const images = [image1, image2, image5, image4, image3, image6];
+  const images = [image1, image2, image3, image4, image5, image6];
 
   const audienceItems = [
     {

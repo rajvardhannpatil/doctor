@@ -1,5 +1,5 @@
 import './MainBanner.css';
-import bannerImage from '../assets/banner1.png';
+import bannerImage from '../assets/banner13.png';
 
 const MainBanner = () => {
   return (
@@ -11,17 +11,21 @@ const MainBanner = () => {
               या आरोग्य संपन्नतेच्या प्रवासात सहभागी व्हा तुमचं आरोग्य हाच तुमचा खरा आधार आहे.
             </p>
             <h1 className="banner-headline">
-              Gut & Mind Detox - Reset Workshop
+              Detox & Reset
+              <br />Gut-Mind-Body
+
             </h1>
-            <p className="banner-subtitle-2">Join 3 days program</p>
+            <p className="banner-subtitle-2">Join 3-day Great workshop
+              "Activate Your Self Healing"
+            </p>
             <h2 className="banner-headline-bold">
               आरोग्य परिवर्तनाची नवी सुरुवात
             </h2>
           </div>
           <div className="banner-image-container">
-            <img 
-              src={bannerImage} 
-              alt="Gut & Mind Detox Workshop" 
+            <img
+              src={bannerImage}
+              alt="Gut & Mind Detox Workshop"
               className="banner-image"
             />
           </div>
