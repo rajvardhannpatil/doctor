@@ -57,10 +57,30 @@
   color: #ffffff;
   font-weight: 500;
   transition: color 0.3s;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fbdd5e;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
 }
 
 .nav a:hover {
   color: #fbdd5e;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .enroll-btn {

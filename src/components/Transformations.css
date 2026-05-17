@@ -58,7 +58,7 @@
   border-radius: 12px;
   border-left: 5px solid #00CED1;
   align-items: flex-start;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   animation: fadeInUp 0.6s ease-out;
   animation-fill-mode: both;
@@ -71,9 +71,9 @@
 .transformation-item:nth-child(5) { animation-delay: 0.5s; }
 
 .transformation-item:hover {
-  transform: translateX(10px) translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 206, 209, 0.25);
-  border-left-width: 6px;
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(0, 206, 209, 0.25);
+  border-left-width: 12px;
   background: linear-gradient(135deg, #ffffff, #e0f7fa);
 }
 

@@ -36,12 +36,12 @@
   background: linear-gradient(135deg, #ffffff, #f0f8ff);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid rgba(0, 206, 209, 0.15);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.05);
   animation: fadeInUp 0.6s ease-out;
   animation-fill-mode: both;
 }
@@ -55,9 +55,9 @@
 
 .audience-item:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(0, 206, 209, 0.3);
-  border-color: #00CED1;
-  background: linear-gradient(135deg, #ffffff, #e0f7fa);
+  box-shadow: 0 15px 35px rgba(251, 221, 94, 0.35);
+  border-color: #fbdd5e;
+  background: linear-gradient(135deg, #ffffff, #fffdf0);
 }
 
 .audience-image {
@@ -90,7 +90,7 @@
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .audience-english {

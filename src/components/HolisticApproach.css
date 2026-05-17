@@ -41,8 +41,8 @@
   font-size: 0.95rem;
   color: #333;
   line-height: 1.7;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   animation: fadeInUp 0.5s ease-out;
   animation-fill-mode: both;
 }
@@ -53,9 +53,9 @@
 .approach-points li:nth-child(4) { animation-delay: 0.4s; }
 
 .approach-points li:hover {
-  transform: translateX(10px);
-  box-shadow: 0 6px 20px rgba(0, 206, 209, 0.2);
-  border-left-width: 6px;
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0, 206, 209, 0.25);
+  border-left-width: 12px;
   background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
 }
 

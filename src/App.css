@@ -122,3 +122,64 @@ section {
     background-position: 1000px 0;
   }
 }
+
+/* Premium CTA Button Enhancement */
+.register-btn {
+  background: linear-gradient(135deg, #fbdd5e, #FFED4E, #FFD700) !important;
+  color: #000000 !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 6px 20px rgba(251, 221, 94, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.15) !important;
+  animation: ctaPulse 3s infinite ease-in-out !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+  animation: ctaShimmer 4s infinite linear;
+}
+
+.register-btn:hover {
+  transform: translateY(-4px) scale(1.03) !important;
+  box-shadow: 0 12px 30px rgba(251, 221, 94, 0.65), inset 0 -3px 0 rgba(0, 0, 0, 0.15) !important;
+  background: linear-gradient(135deg, #FFED4E, #fbdd5e, #FFD700) !important;
+}
+
+.register-btn:active {
+  transform: translateY(-1px) scale(0.98) !important;
+  box-shadow: 0 4px 10px rgba(251, 221, 94, 0.4) !important;
+}
+
+@keyframes ctaPulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(251, 221, 94, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(251, 221, 94, 0.7), inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes ctaShimmer {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
