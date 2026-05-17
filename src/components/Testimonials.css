@@ -262,6 +262,11 @@
 }
 
 @media (max-width: 480px) {
+  .testimonials .section-headline {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
   .carousel-container {
     gap: 0.3rem;
   }

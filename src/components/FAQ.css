@@ -148,11 +148,15 @@
 @media (max-width: 480px) {
   .faq .section-headline {
     font-size: 1.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .faq-question {
     padding: 1rem;
     font-size: 0.9rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .faq-answer {
@@ -161,6 +165,8 @@
   
   .faq-answer p {
     font-size: 0.85rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

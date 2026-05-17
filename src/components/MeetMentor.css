@@ -150,18 +150,24 @@
 @media (max-width: 480px) {
   .meet-mentor .section-headline {
     font-size: 1.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .mentor-name {
     font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .mentor-text {
     font-size: 0.95rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .mentor-image .doctor-image {
-    max-width: 250px;
+    max-width: 240px;
   }
 }
 

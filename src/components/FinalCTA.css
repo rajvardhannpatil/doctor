@@ -251,14 +251,35 @@
 @media (max-width: 480px) {
   .cta-headline {
     font-size: 1.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .cta-subheadline {
     font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .cta-marathi {
     font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .cta-english {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .seats-left {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .urgency-note {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .register-btn.large {
@@ -268,6 +289,8 @@
   
   .thank-you {
     font-size: 1.1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
@@ -314,6 +337,30 @@
   
   .cta-message-box p:last-child {
     font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-message-box {
+    padding: 1rem;
+    margin: 1.2rem auto;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cta-message-box p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .cta-message-box p:last-child {
+    font-size: 1.05rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

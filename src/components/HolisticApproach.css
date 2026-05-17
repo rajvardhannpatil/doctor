@@ -130,6 +130,10 @@
     font-size: 0.95rem;
   }
   
+  .approach-points li:hover {
+    transform: translateY(-3px);
+  }
+  
   .pyramid-image {
     max-width: 300px;
   }
@@ -138,15 +142,29 @@
 @media (max-width: 480px) {
   .holistic-approach .section-headline {
     font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .approach-points li {
     padding: 1rem;
     font-size: 0.85rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .approach-points li strong {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .approach-points li:hover {
+    transform: translateY(-3px);
   }
   
   .pyramid-image {
-    max-width: 250px;
+    max-width: 240px;
   }
 }
 

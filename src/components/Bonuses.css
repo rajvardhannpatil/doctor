@@ -238,7 +238,7 @@
   }
   
   .bonuses-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 }
@@ -278,21 +278,47 @@
   }
 }
 
+@media (max-width: 576px) {
+  .bonuses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   .investment-quote {
     font-size: 1.1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .bonuses .section-headline {
     font-size: 1.4rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .bonus-item {
     padding: 1.2rem;
   }
   
-  .bonus-icon {
-    font-size: 3rem;
+  .bonus-item h3 {
+    font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .bonus-note, .pricing-text, .pricing-highlight, .whatsapp-note {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .special-offer-img {
+    max-width: 100%;
+  }
+  
+  .register-btn {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
   }
 }
 

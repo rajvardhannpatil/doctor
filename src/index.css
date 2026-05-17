@@ -26,19 +26,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--white);
   color: var(--text-dark);
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 #root {
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Responsive images */
@@ -58,5 +70,26 @@ img {
 @media (max-width: 480px) {
   html {
     font-size: 13px;
+  }
+}
+
+/* Global Responsive Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 968px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
   }
 }

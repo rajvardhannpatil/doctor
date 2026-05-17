@@ -138,6 +138,10 @@
     margin-bottom: 1rem;
   }
   
+  .transformation-item:hover {
+    transform: translateY(-3px);
+  }
+  
   .transformation-description {
     font-size: 1rem;
   }
@@ -146,22 +150,29 @@
 @media (max-width: 480px) {
   .transformations .section-headline {
     font-size: 1.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .transformation-item {
-    flex-direction: column;
-    text-align: center;
     gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .transformation-item:hover {
+    transform: translateY(-3px);
   }
   
   .transformation-number {
-    width: 35px;
-    height: 35px;
-    font-size: 1.1rem;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
   }
   
   .transformation-description {
     font-size: 0.95rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

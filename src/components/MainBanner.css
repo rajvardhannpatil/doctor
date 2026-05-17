@@ -174,24 +174,52 @@
 
 @media (max-width: 480px) {
   .main-banner {
-    min-height: 350px;
+    min-height: 300px;
+  }
+  
+  .banner-overlay {
+    padding: 1rem;
+  }
+  
+  .banner-image {
+    max-width: 240px;
+  }
+  
+  .banner-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
   
   .banner-headline {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .banner-headline-bold {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .banner-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .banner-subtitle-2 {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

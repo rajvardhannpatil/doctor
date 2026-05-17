@@ -69,15 +69,16 @@
   height: 120px;
   border-radius: 12px;
   object-fit: cover;
-  border: 3px solid #FFD700;
+  border: 3px solid #fbdd5e;
   display: block;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(251, 221, 94, 0.3);
+  max-width: 100%;
 }
 
 .audience-item:hover .audience-img {
   transform: scale(1.1) rotate(2deg);
-  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 6px 15px rgba(251, 221, 94, 0.5);
 }
 
 .audience-content {
@@ -103,10 +104,6 @@
     padding: 3rem 0;
   }
   
-  .container {
-    padding: 0 1.5rem;
-  }
-  
   .section-headline {
     font-size: 2rem;
   }
@@ -117,21 +114,12 @@
   }
   
   .audience-item {
-    flex-direction: column;
-    text-align: center;
     padding: 1.2rem;
-    align-items: center;
-  }
-  
-  .audience-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
   
   .audience-img {
-    margin: 0 auto;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -147,24 +135,23 @@
   .section-headline {
     font-size: 1.8rem;
   }
-  
-  .audience-marathi {
-    font-size: 1rem;
-  }
-  
-  .audience-english {
-    font-size: 0.9rem;
-  }
 }
 
-@media (max-width: 480px) {
-  .section-headline {
-    font-size: 1.5rem;
+@media (max-width: 576px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
   }
-  
+
   .audience-item {
-    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2rem;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .audience-image {
@@ -172,12 +159,63 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
   }
   
   .audience-img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     margin: 0 auto;
+    border-color: #fbdd5e;
+    box-sizing: border-box;
+  }
+
+  .audience-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-headline {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  .audience-item {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .audience-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  
+  .audience-marathi {
+    font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .audience-english {
+    font-size: 0.85rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

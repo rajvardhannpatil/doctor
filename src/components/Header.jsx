@@ -1,4 +1,5 @@
 import './Header.css';
+import logoImg from '../assets/logo.png';
 
 const Header = () => {
   const handleEnrollClick = () => {
@@ -16,7 +17,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <span className="logo-icon">🌿</span>
+          <img src={logoImg} alt="Healholis Logo" className="logo-icon" />
           <span className="logo-text">Healholis <span className="logo-wellness">Wellness</span></span>
         </div>
         <nav className="nav">
