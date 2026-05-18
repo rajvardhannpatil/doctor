@@ -1,8 +1,9 @@
 .transformations {
-  background: linear-gradient(135deg, #f0fff4, #e8f5e9, #f0fdf4);
-  background-size: 200% 200%;
+  background:
+    radial-gradient(circle at 0% 12%, rgba(151, 181, 122, 0.14), transparent 24%),
+    radial-gradient(circle at 100% 84%, rgba(151, 181, 122, 0.14), transparent 24%),
+    #f6f8ec;
   padding: 4rem 0;
-  animation: gradientShift 12s ease infinite;
   position: relative;
   overflow: hidden;
 }
@@ -14,54 +15,86 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 206, 209, 0.05), transparent 60%);
+  background: radial-gradient(circle at 50% 16%, rgba(255, 217, 85, 0.12), transparent 34%);
   pointer-events: none;
-  animation: float 8s ease-in-out infinite;
-}
-
-@keyframes gradientShift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 .transformations .container {
-  max-width: 1200px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.transformations-heading {
+  text-align: center;
+  margin-bottom: 2.1rem;
 }
 
 .transformations .section-headline {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #0066CC;
-  margin-bottom: 3rem;
+  color: #315128;
+  font-size: 2.35rem;
   font-weight: bold;
-  animation: fadeInUp 0.8s ease-out;
-  text-shadow: 2px 2px 4px rgba(0, 102, 204, 0.1);
+  line-height: 1.35;
+  margin: 0;
+  text-align: center;
+  text-shadow: none;
+}
+
+.transformations .section-headline span {
+  display: block;
+}
+
+.transformations .section-headline span:last-child {
+  color: #b5831f;
+}
+
+.transformations-divider {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.transformations-divider span {
+  background: rgba(49, 81, 40, 0.35);
+  display: block;
+  height: 1px;
+  width: 120px;
+}
+
+.transformations-divider svg {
+  color: #6b8c4f;
+  fill: none;
+  height: 30px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 30px;
 }
 
 .transformations-list {
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .transformation-item {
   display: flex;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #ffffff, #f0f8ff);
-  border-radius: 12px;
-  border-left: 5px solid #00CED1;
-  align-items: flex-start;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  gap: 1.4rem;
+  padding: 1.6rem 5.8rem 1.6rem 2.1rem;
+  margin-bottom: 1.4rem;
+  background: #fffef8;
+  border: 1px solid rgba(217, 226, 197, 0.9);
+  border-left: 16px solid #315128;
+  border-radius: 0 18px 18px 0;
+  align-items: center;
+  box-shadow: 0 10px 24px rgba(45, 69, 32, 0.12);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.6s ease-out;
-  animation-fill-mode: both;
+  position: relative;
+  overflow: hidden;
 }
 
 .transformation-item:nth-child(1) { animation-delay: 0.1s; }
@@ -71,38 +104,85 @@
 .transformation-item:nth-child(5) { animation-delay: 0.5s; }
 
 .transformation-item:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 15px 30px rgba(0, 206, 209, 0.25);
-  border-left-width: 12px;
-  background: linear-gradient(135deg, #ffffff, #e0f7fa);
+  background: #fffef8;
+  border-color: rgba(255, 217, 85, 0.9);
+  border-left-color: #315128;
+  box-shadow: 0 16px 34px rgba(45, 69, 32, 0.18);
+  transform: translateY(-5px);
 }
 
 .transformation-number {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #00CED1, #20B2AA);
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #5f842e, #315128);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   font-weight: bold;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0, 206, 209, 0.4);
+  box-shadow: 0 8px 18px rgba(49, 81, 40, 0.28);
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .transformation-item:hover .transformation-number {
-  transform: scale(1.15) rotate(360deg);
-  box-shadow: 0 6px 15px rgba(0, 206, 209, 0.6);
+  box-shadow: 0 10px 22px rgba(49, 81, 40, 0.34);
+  transform: scale(1.06);
 }
 
 .transformation-description {
-  color: #333;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  color: #2c3527;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75;
   margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.transformation-card-leaf {
+  bottom: 0.55rem;
+  color: rgba(107, 140, 79, 0.52);
+  position: absolute;
+  right: 1.35rem;
+  width: 70px;
+}
+
+.transformation-card-leaf svg,
+.transformation-leaf svg {
+  display: block;
+  fill: currentColor;
+  width: 100%;
+}
+
+.transformation-card-leaf path:last-child {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+.transformation-leaf {
+  color: rgba(107, 140, 79, 0.28);
+  position: absolute;
+  width: 120px;
+  z-index: 0;
+}
+
+.transformation-leaf-left {
+  left: -28px;
+  top: 26px;
+  transform: rotate(-28deg);
+}
+
+.transformation-leaf-right {
+  right: -22px;
+  top: 34px;
+  transform: rotate(28deg) scaleX(-1);
 }
 
 @media (max-width: 968px) {
@@ -115,7 +195,7 @@
   }
   
   .transformations .section-headline {
-    font-size: 2rem;
+    font-size: 1.95rem;
   }
   
   .transformations-list {
@@ -129,12 +209,13 @@
   }
   
   .transformations .section-headline {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: 1.55rem;
   }
   
   .transformation-item {
-    padding: 1.2rem;
+    border-left-width: 10px;
+    gap: 1rem;
+    padding: 1.2rem 4.5rem 1.2rem 1.1rem;
     margin-bottom: 1rem;
   }
   
@@ -143,20 +224,35 @@
   }
   
   .transformation-description {
-    font-size: 1rem;
+    font-size: 1.02rem;
+  }
+
+  .transformation-card-leaf {
+    right: 0.8rem;
+    width: 52px;
   }
 }
 
 @media (max-width: 480px) {
   .transformations .section-headline {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  .transformations-divider {
+    gap: 0.65rem;
+    margin-top: 0.85rem;
+  }
+
+  .transformations-divider span {
+    width: 70px;
+  }
   
   .transformation-item {
-    gap: 1rem;
-    padding: 1rem;
+    border-left-width: 8px;
+    gap: 0.8rem;
+    padding: 1rem 3.25rem 1rem 0.85rem;
   }
   
   .transformation-item:hover {
@@ -164,15 +260,26 @@
   }
   
   .transformation-number {
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.12rem;
   }
   
   .transformation-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.65;
     word-wrap: break-word;
     overflow-wrap: break-word;
+  }
+
+  .transformation-card-leaf {
+    bottom: 0.7rem;
+    right: 0.5rem;
+    width: 40px;
+  }
+
+  .transformation-leaf {
+    width: 78px;
   }
 }
 

@@ -38,12 +38,17 @@ const TargetAudience = () => {
 
   return (
     <section className="target-audience">
-      <div className="container">
-        <p className="section-subtitle">जर तुम्ही स्वतःमध्ये खालील त्रास-समस्या अनुभवत असाल. If you facing</p>
-        <h2 className="section-headline">तर ही वर्कशॉप तुमच्यासाठी आहे</h2>
+      <div className="container target-audience-container">
+        <div className="target-audience-heading">
+          <p className="section-subtitle">जर तुम्ही स्वतःमध्ये खालील त्रास-समस्या अनुभवत असाल.</p>
+          <span>If you facing</span>
+          <h2 className="section-headline">तर ही वर्कशॉप तुमच्यासाठी आहे</h2>
+        </div>
+
         <div className="audience-grid">
           {audienceItems.map((item, index) => (
             <div key={index} className="audience-item">
+              <span className="audience-number">{String(index + 1).padStart(2, '0')}</span>
               <div className="audience-image">
                 <img 
                   src={images[index]} 

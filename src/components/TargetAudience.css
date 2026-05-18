@@ -219,3 +219,223 @@
   }
 }
 
+/* Soft cream/green theme aligned with the workshop intro section */
+.target-audience {
+  background:
+    radial-gradient(circle at 0% 12%, rgba(151, 181, 122, 0.16), transparent 24%),
+    radial-gradient(circle at 100% 82%, rgba(151, 181, 122, 0.18), transparent 24%),
+    #f6f8ec;
+  color: #22361c;
+  overflow: hidden;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.target-audience-container {
+  max-width: 1120px;
+}
+
+.target-audience-heading {
+  background: #fffef8;
+  border: 1px solid rgba(217, 226, 197, 0.85);
+  border-radius: 24px;
+  box-shadow: 0 12px 28px rgba(45, 69, 32, 0.1);
+  margin: 0 auto 2rem;
+  max-width: 760px;
+  padding: 1.6rem 1.25rem;
+  text-align: center;
+}
+
+.target-audience .section-subtitle {
+  color: #33462c;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.target-audience-heading span {
+  color: #59654f;
+  display: block;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.target-audience .section-headline {
+  animation: none;
+  color: #315128;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  margin: 0.8rem 0 0;
+  text-shadow: none;
+}
+
+.target-audience .audience-grid {
+  gap: 1.35rem;
+}
+
+.target-audience .audience-item {
+  align-items: stretch;
+  background: #fffef8;
+  border: 1px solid rgba(217, 226, 197, 0.95);
+  border-radius: 22px;
+  box-shadow: 0 10px 24px rgba(45, 69, 32, 0.1);
+  gap: 1rem;
+  overflow: hidden;
+  padding: 0.9rem;
+  position: relative;
+}
+
+.target-audience .audience-item:hover {
+  background: #fffef8;
+  border-color: rgba(255, 212, 85, 0.95);
+  box-shadow: 0 16px 34px rgba(45, 69, 32, 0.16);
+  transform: translateY(-5px);
+}
+
+.audience-number {
+  align-items: center;
+  background: #ffd955;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(214, 170, 46, 0.25);
+  color: #22361c;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 800;
+  height: 34px;
+  justify-content: center;
+  left: 1rem;
+  position: absolute;
+  top: 1rem;
+  width: 34px;
+  z-index: 1;
+}
+
+.target-audience .audience-image {
+  border-radius: 16px;
+  flex: 0 0 150px;
+  overflow: hidden;
+}
+
+.target-audience .audience-img {
+  border: 0;
+  border-radius: 16px;
+  box-shadow: none;
+  height: 100%;
+  min-height: 150px;
+  width: 150px;
+}
+
+.target-audience .audience-item:hover .audience-img {
+  box-shadow: none;
+  transform: scale(1.04);
+}
+
+.target-audience .audience-content {
+  align-items: flex-start;
+  background: #f0f2e5;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.target-audience .audience-marathi {
+  color: #315128;
+  font-size: 1.04rem;
+  line-height: 1.55;
+  margin-bottom: 0.7rem;
+}
+
+.target-audience .audience-english {
+  color: #4c5545;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 968px) {
+  .target-audience-container {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .target-audience {
+    padding: 2.5rem 0;
+  }
+
+  .target-audience-container {
+    padding: 0 1rem;
+  }
+
+  .target-audience-heading {
+    border-radius: 20px;
+    margin-bottom: 1.4rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .target-audience .section-headline {
+    font-size: 1.65rem;
+  }
+
+  .target-audience .audience-grid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .target-audience .audience-item {
+    gap: 0;
+    padding: 0.75rem;
+    text-align: left;
+  }
+
+  .target-audience .audience-image {
+    flex: none;
+    margin-bottom: 0.75rem;
+  }
+
+  .target-audience .audience-img {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .target-audience .audience-content {
+    padding: 0.9rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .target-audience {
+    padding: 2rem 0;
+  }
+
+  .target-audience-heading {
+    margin-bottom: 1rem;
+  }
+
+  .target-audience .section-subtitle {
+    font-size: 0.92rem;
+  }
+
+  .target-audience-heading span {
+    font-size: 0.82rem;
+  }
+
+  .target-audience .section-headline {
+    font-size: 1.32rem;
+  }
+
+  .target-audience .audience-marathi {
+    font-size: 0.94rem;
+  }
+
+  .target-audience .audience-english {
+    font-size: 0.82rem;
+  }
+}
+

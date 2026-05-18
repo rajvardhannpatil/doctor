@@ -1,9 +1,10 @@
 .meet-mentor {
-  background: linear-gradient(135deg, #87CEEB, #6BB6D6, #00CED1);
-  background-size: 200% 200%;
-  color: #000;
+  background:
+    radial-gradient(circle at 0% 14%, rgba(151, 181, 122, 0.14), transparent 24%),
+    radial-gradient(circle at 100% 82%, rgba(151, 181, 122, 0.14), transparent 24%),
+    #f6f8ec;
+  color: #22361c;
   padding: 4rem 0;
-  animation: gradientShift 12s ease infinite;
   position: relative;
   overflow: hidden;
 }
@@ -15,60 +16,129 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.15), transparent 60%);
+  background: radial-gradient(circle at 50% 18%, rgba(255, 217, 85, 0.12), transparent 36%);
   pointer-events: none;
-  animation: float 10s ease-in-out infinite;
-}
-
-@keyframes gradientShift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 .meet-mentor .section-headline {
-  color: #0066CC;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  animation: fadeInUp 0.8s ease-out;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-  position: relative;
-  z-index: 1;
+  color: #213a1b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.45rem;
+  font-weight: 800;
+  line-height: 1.12;
+  margin: 0;
+  text-align: center;
+  text-shadow: none;
+}
+
+.meet-mentor .section-headline span {
+  display: block;
+}
+
+.meet-mentor .section-headline span:last-child {
+  color: #b5831f;
+}
+
+.mentor-heading {
+  margin: 0 auto 2rem;
+  max-width: 760px;
+  text-align: center;
+}
+
+.mentor-heading p {
+  color: #315128;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+}
+
+.mentor-divider {
+  align-items: center;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  margin-top: 1.15rem;
+}
+
+.mentor-divider span {
+  background: rgba(49, 81, 40, 0.35);
+  display: block;
+  height: 1px;
+  width: 110px;
+}
+
+.mentor-divider svg {
+  color: #6b8c4f;
+  fill: none;
+  height: 26px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 26px;
 }
 
 .mentor-name {
-  text-align: center;
+  color: #213a1b;
   font-size: 2rem;
-  color: #FFD700;
-  margin-bottom: 3rem;
-  font-weight: bold;
-  animation: fadeInUp 0.8s ease-out 0.1s both;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 1;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.mentor-name span {
+  color: #b5831f;
 }
 
 .mentor-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: 2rem;
   align-items: center;
+  background: #fffef8;
+  border: 1px solid rgba(217, 226, 197, 0.95);
+  border-radius: 28px;
+  box-shadow: 0 16px 34px rgba(45, 69, 32, 0.13);
+  padding: 1.35rem;
+  position: relative;
+  z-index: 1;
 }
 
 .mentor-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #000;
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+  background: #f0f2e5;
+  border-radius: 22px;
+  color: #29351f;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  padding: 1.5rem;
   position: relative;
   z-index: 1;
 }
 
 .mentor-text p {
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.1rem;
+}
+
+.mentor-text p:last-child {
+  margin-bottom: 0;
+}
+
+.mentor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.15rem;
+}
+
+.mentor-tags span {
+  background: #315128;
+  border-radius: 999px;
+  color: #fffef8;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.45rem 0.75rem;
 }
 
 .mentor-image {
@@ -77,28 +147,70 @@
   align-items: center;
 }
 
+.mentor-image-card {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 217, 85, 0.18), transparent 38%),
+    linear-gradient(135deg, #173913, #0d2d10);
+  border-radius: 26px;
+  box-shadow: 0 14px 28px rgba(45, 69, 32, 0.2);
+  padding: 0.85rem;
+  width: min(100%, 370px);
+}
+
 .mentor-image .doctor-image {
   width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 16px;
-  border: 4px solid #FFD700;
+  aspect-ratio: 4 / 5;
+  border: 4px solid #ffd955;
+  border-radius: 20px;
+  display: block;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+  object-position: top center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
   transition: all 0.4s ease;
-  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 .mentor-image .doctor-image:hover {
-  transform: scale(1.08) rotate(-2deg);
-  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
-  border-color: #FFED4E;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  transform: translateY(-4px);
 }
 
 .meet-mentor .container {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.mentor-leaf {
+  color: rgba(107, 140, 79, 0.34);
+  position: absolute;
+  top: 86px;
+  width: 92px;
+  z-index: 0;
+}
+
+.mentor-leaf svg {
+  display: block;
+  fill: currentColor;
+  width: 100%;
+}
+
+.mentor-leaf path:last-child {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+.mentor-leaf-left {
+  left: 18px;
+  transform: rotate(-18deg);
+}
+
+.mentor-leaf-right {
+  right: 18px;
+  transform: rotate(18deg) scaleX(-1);
 }
 
 @media (max-width: 968px) {
@@ -115,12 +227,14 @@
   }
   
   .mentor-name {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   
   .mentor-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
   }
 }
 
@@ -134,16 +248,11 @@
   }
   
   .mentor-name {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
+    font-size: 1.45rem;
   }
   
   .mentor-text {
     font-size: 1rem;
-  }
-  
-  .mentor-image .doctor-image {
-    max-width: 300px;
   }
 }
 
@@ -155,19 +264,51 @@
   }
   
   .mentor-name {
-    font-size: 1.2rem;
+    font-size: 1.28rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
+  }
+
+  .mentor-heading p {
+    font-size: 0.82rem;
+  }
+
+  .mentor-divider span {
+    width: 70px;
+  }
+
+  .mentor-content {
+    border-radius: 20px;
+    padding: 0.75rem;
   }
   
   .mentor-text {
-    font-size: 0.95rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    padding: 1rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
-  
-  .mentor-image .doctor-image {
-    max-width: 240px;
+
+  .mentor-tags span {
+    font-size: 0.68rem;
+  }
+
+  .mentor-image-card {
+    border-radius: 18px;
+    padding: 0.6rem;
+  }
+
+  .mentor-leaf {
+    width: 54px;
+  }
+
+  .mentor-leaf-left {
+    left: -12px;
+  }
+
+  .mentor-leaf-right {
+    right: -12px;
   }
 }
 

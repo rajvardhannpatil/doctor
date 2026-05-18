@@ -1,50 +1,109 @@
 .holistic-approach {
-  background-color: #ffffff;
+  background:
+    radial-gradient(circle at 0% 14%, rgba(151, 181, 122, 0.14), transparent 24%),
+    radial-gradient(circle at 100% 84%, rgba(151, 181, 122, 0.14), transparent 24%),
+    #f6f8ec;
+  color: #22361c;
+  overflow: hidden;
   padding: 4rem 0;
+  position: relative;
 }
 
 .holistic-approach .container {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.holistic-heading {
+  margin: 0 auto 2rem;
+  text-align: center;
 }
 
 .holistic-approach .section-headline {
+  color: #213a1b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.45rem;
+  font-weight: 800;
+  line-height: 1.12;
+  margin: 0;
   text-align: center;
-  font-size: 1.8rem;
-  color: #0066CC;
-  margin-bottom: 3rem;
-  line-height: 1.4;
-  font-weight: 500;
-  animation: fadeInUp 0.8s ease-out;
-  text-shadow: 2px 2px 4px rgba(0, 102, 204, 0.1);
+  text-shadow: none;
+}
+
+.holistic-approach .section-headline span {
+  display: block;
+}
+
+.holistic-approach .section-headline span:last-child {
+  color: #b5831f;
+}
+
+.holistic-heading p {
+  color: #213a1b;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.holistic-divider {
+  align-items: center;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  margin: 1.15rem 0 0.75rem;
+}
+
+.holistic-divider span {
+  background: rgba(49, 81, 40, 0.35);
+  display: block;
+  height: 1px;
+  width: 110px;
+}
+
+.holistic-divider svg {
+  color: #6b8c4f;
+  fill: none;
+  height: 26px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 26px;
 }
 
 .approach-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
   align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
 }
 
 .approach-points {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .approach-points li {
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #f0f8ff, #ffffff);
-  border-radius: 12px;
-  border-left: 5px solid #00CED1;
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.7;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  align-items: center;
+  background: linear-gradient(135deg, #173913, #0d2d10);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(45, 69, 32, 0.2);
+  color: #eef4df;
+  display: flex;
+  gap: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.1rem;
+  min-height: 126px;
+  overflow: hidden;
+  padding: 1.35rem 4.4rem 1.35rem 1.35rem;
+  position: relative;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.5s ease-out;
-  animation-fill-mode: both;
 }
 
 .approach-points li:nth-child(1) { animation-delay: 0.1s; }
@@ -53,38 +112,124 @@
 .approach-points li:nth-child(4) { animation-delay: 0.4s; }
 
 .approach-points li:hover {
-  transform: translateY(-5px) scale(1.01);
-  box-shadow: 0 15px 35px rgba(0, 206, 209, 0.25);
-  border-left-width: 12px;
-  background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
+  box-shadow: 0 16px 30px rgba(45, 69, 32, 0.28);
+  transform: translateY(-4px);
+}
+
+.approach-icon {
+  align-items: center;
+  background: #ffe06b;
+  border-radius: 999px;
+  color: #173913;
+  display: flex;
+  flex: 0 0 auto;
+  height: 78px;
+  justify-content: center;
+  width: 78px;
+}
+
+.approach-points li:nth-child(2) .approach-icon,
+.approach-points li:nth-child(3) .approach-icon {
+  background: #b7e78d;
+}
+
+.approach-icon svg {
+  fill: none;
+  height: 42px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+  width: 42px;
+}
+
+.approach-copy {
+  position: relative;
+  z-index: 1;
 }
 
 .approach-points li strong {
   display: block;
-  margin-bottom: 0.5rem;
-  color: #0066CC;
-  font-size: 1rem;
+  color: #f5d76a;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin-bottom: 0.45rem;
+}
+
+.approach-points li:nth-child(2) strong,
+.approach-points li:nth-child(3) strong {
+  color: #b7e78d;
+}
+
+.approach-copy span {
+  color: #eef4df;
+  display: block;
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .approach-visual {
+  align-self: stretch;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .pyramid-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 460px;
   height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  box-shadow: 0 14px 28px rgba(45, 69, 32, 0.16);
+  display: block;
+  object-fit: cover;
   transition: all 0.4s ease;
-  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 .pyramid-image:hover {
-  transform: scale(1.05) rotate(2deg);
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 18px 34px rgba(45, 69, 32, 0.22);
+  transform: translateY(-4px);
+}
+
+.approach-card-leaf {
+  bottom: 0.8rem;
+  color: rgba(183, 231, 141, 0.46);
+  position: absolute;
+  right: 1rem;
+  width: 48px;
+}
+
+.approach-card-leaf svg,
+.holistic-leaf svg {
+  display: block;
+  fill: currentColor;
+  width: 100%;
+}
+
+.approach-card-leaf path:last-child,
+.holistic-leaf path:last-child {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+.holistic-leaf {
+  color: rgba(107, 140, 79, 0.38);
+  position: absolute;
+  top: 86px;
+  width: 92px;
+  z-index: 0;
+}
+
+.holistic-leaf-left {
+  left: 18px;
+  transform: rotate(-18deg);
+}
+
+.holistic-leaf-right {
+  right: 18px;
+  transform: rotate(18deg) scaleX(-1);
 }
 
 @media (max-width: 968px) {
@@ -95,19 +240,18 @@
   .holistic-approach .container {
     padding: 0 1.5rem;
   }
-  
-  .holistic-approach .section-headline {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+
+  .approach-content {
+    gap: 1.75rem;
+    grid-template-columns: 1fr;
   }
   
-  .approach-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .holistic-approach .section-headline {
+    font-size: 2.05rem;
   }
   
   .pyramid-image {
-    max-width: 350px;
+    max-width: 520px;
     margin: 0 auto;
   }
 }
@@ -118,16 +262,35 @@
   }
   
   .holistic-approach .section-headline {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
+  }
+
+  .holistic-heading p {
+    font-size: 1.1rem;
   }
   
   .approach-points li {
-    padding: 1.2rem;
-    font-size: 0.9rem;
+    gap: 1rem;
+    min-height: auto;
+    padding: 1rem 3.3rem 1rem 1rem;
   }
   
   .approach-points li strong {
-    font-size: 0.95rem;
+    font-size: 1rem;
+  }
+
+  .approach-copy span {
+    font-size: 0.86rem;
+  }
+
+  .approach-icon {
+    height: 62px;
+    width: 62px;
+  }
+
+  .approach-icon svg {
+    height: 34px;
+    width: 34px;
   }
   
   .approach-points li:hover {
@@ -135,20 +298,43 @@
   }
   
   .pyramid-image {
-    max-width: 300px;
+    max-width: 100%;
+  }
+
+  .holistic-leaf {
+    opacity: 0.65;
+    top: 74px;
+    width: 70px;
   }
 }
 
 @media (max-width: 480px) {
   .holistic-approach .section-headline {
-    font-size: 1.2rem;
+    font-size: 1.45rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  .holistic-approach .container {
+    padding: 0 1rem;
+  }
+
+  .holistic-heading {
+    margin-bottom: 1.35rem;
+  }
+
+  .holistic-heading p {
+    font-size: 0.98rem;
+  }
+
+  .holistic-divider span {
+    width: 70px;
+  }
   
   .approach-points li {
-    padding: 1rem;
-    font-size: 0.85rem;
+    border-radius: 11px;
+    gap: 0.75rem;
+    padding: 0.9rem 2.7rem 0.9rem 0.8rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -158,13 +344,44 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  .approach-copy span {
+    font-size: 0.78rem;
+  }
+
+  .approach-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .approach-icon svg {
+    height: 27px;
+    width: 27px;
+  }
   
   .approach-points li:hover {
     transform: translateY(-3px);
   }
   
   .pyramid-image {
-    max-width: 240px;
+    border-radius: 13px;
+  }
+
+  .approach-card-leaf {
+    right: 0.45rem;
+    width: 34px;
+  }
+
+  .holistic-leaf {
+    width: 54px;
+  }
+
+  .holistic-leaf-left {
+    left: -12px;
+  }
+
+  .holistic-leaf-right {
+    right: -12px;
   }
 }
 
