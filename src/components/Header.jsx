@@ -20,13 +20,13 @@ const Header = () => {
           <img src={logoImg} alt="Healholis Logo" className="logo-icon" />
           <span className="logo-text">Healholis <span className="logo-wellness">Wellness</span></span>
         </div>
-        <nav className="nav">
+        {/* <nav className="nav">
           <a href="#home">Home</a>
           <a href="#about">About Us</a>
           <a href="#workshop">Workshop</a>
           <a href="#courses">Courses</a>
           <a href="#contact">Contact Us</a>
-        </nav>
+        </nav> */}
         <button className="enroll-btn" onClick={handleEnrollClick}>Enroll Now</button>
       </div>
     </header>
