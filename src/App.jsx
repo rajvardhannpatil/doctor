@@ -10,12 +10,14 @@ import FAQ from './components/FAQ';
 import MeetMentor from './components/MeetMentor';
 import FinalCTA from './components/FinalCTA';
 import WhatsAppModal from './components/WhatsAppModal';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <WhatsAppModal />
+      <FloatingWhatsApp />
       <Header />
       <MainBanner />
       <WorkshopIntro />
