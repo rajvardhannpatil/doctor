@@ -1,6 +1,5 @@
 import './MainBanner.css';
 import bannerImage from '../assets/banner.jpeg';
-import drImage from '../assets/newprofile.jpeg';
 
 const MainBanner = () => {
   const handleScrollToWorkshop = () => {

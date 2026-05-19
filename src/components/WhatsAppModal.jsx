@@ -2,17 +2,21 @@ import { useState, useEffect } from 'react';
 import './WhatsAppModal.css';
 
 const WhatsAppModal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const paymentStatus = urlParams.get('payment_status');
+    const paymentSuccess = localStorage.getItem('payment_success');
+
+    return paymentStatus === 'success' || paymentSuccess === 'true';
+  });
   const whatsappLink = 'https://chat.whatsapp.com/L44KY6TMv1q6QDMBkZ83Ts?mode=gi_t';
 
   useEffect(() => {
-    // Check if payment was successful (from URL params or localStorage)
     const urlParams = new URLSearchParams(window.location.search);
     const paymentStatus = urlParams.get('payment_status');
     const paymentSuccess = localStorage.getItem('payment_success');
 
     if (paymentStatus === 'success' || paymentSuccess === 'true') {
-      setIsOpen(true);
       // Clear the localStorage flag after showing modal
       localStorage.removeItem('payment_success');
       // Clean URL by removing payment_status parameter

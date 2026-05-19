@@ -24,9 +24,9 @@ const WorkshopIntro = () => {
       <div className="workshop-container">
         <div className="workshop-hero-section">
           <div className="workshop-text-content">
-            <h1 className="workshop-main-headline">
+            <h2 className="workshop-main-headline">
               Transformative workshop sessions - program By
-            </h1>
+            </h2>
 
             <div className="workshop-box">
               <img src={doctorPortrait} alt="Dr. Akash Dongale" className="workshop-doctor-portrait" />
