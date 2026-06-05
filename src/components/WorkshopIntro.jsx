@@ -48,7 +48,7 @@ const WorkshopIntro = () => {
                     </svg>
                   </span>
                   <span className="schedule-label"><strong>Starting date:</strong></span>
-                  <span className="schedule-value">14 March to 16 March 2026</span>
+                  <span className="schedule-value">12 June to 14 June 2026</span>
                 </div>
                 <div className="schedule-item">
                   <span className="schedule-icon" aria-hidden="true">
@@ -68,7 +68,7 @@ const WorkshopIntro = () => {
                   <span className="schedule-label"><strong>Batches:</strong></span>
                   <div className="schedule-value">
                     <div>Morning - 7:00 am to 8:30 am</div>
-                    <div>Night - 9:30 pm to 11:00 pm</div>
+
                   </div>
                 </div>
               </div>

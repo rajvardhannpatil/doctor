@@ -9,7 +9,7 @@ const WhatsAppModal = () => {
 
     return paymentStatus === 'success' || paymentSuccess === 'true';
   });
-  const whatsappLink = 'https://chat.whatsapp.com/L44KY6TMv1q6QDMBkZ83Ts?mode=gi_t';
+  const whatsappLink = 'https://chat.whatsapp.com/B9eKUnsd5k73axxPR2fBmd?mlu=4&s=sw&p=a';
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
